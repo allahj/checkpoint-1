@@ -15,7 +15,7 @@ describe('soup', () => {
     expect(soup(phrase, characterBank)).toBe(true);
   });
 
-  it('the soup function returns false if the "characterBank" (second argument) has enough characters to create the "phrase" (first argument)', () => {
+  it('the soup function returns false if the "characterBank" (second argument) does NOT have enough characters to create the "phrase" (first argument)', () => {
     const phrase = 'ab';
     const characterBank = 'aa';
 
