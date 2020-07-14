@@ -22,6 +22,7 @@ describe('createBook', () => {
   });
   
   it('every instance has an id, title, author, price, and rating property attached to the instance', () => {
+    const book = createBook(1, 'Catch 22', 'Joseph Heller', 19.99);
     expect(book.hasOwnProperty('id')).toBe(true);
     expect(book.hasOwnProperty('title')).toBe(true);
     expect(book.hasOwnProperty('author')).toBe(true);
