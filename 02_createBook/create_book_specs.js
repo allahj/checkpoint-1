@@ -2,13 +2,16 @@
 /* eslint-disable no-undef */
 
 describe('createBook', () => {
+  
   it('`createBook` is a function', () => {
     expect(typeof createBook).toBe('function');
   });
+  
   it('`createBook` returns an object (instance) ', () => {
     const book = createBook();
     expect(typeof book).toBe('object');
   });
+  
   it('every instance has an id, title, author, price and rating property', () => {
     const book = createBook(1, 'Catch 22', 'Joseph Heller', 19.99);
     expect(book.id).toBe(1);
@@ -16,6 +19,14 @@ describe('createBook', () => {
     expect(book.author).toBe('Joseph Heller');
     expect(book.price).toBe(19.99);
     expect(book.rating).toEqual([]);
+  });
+  
+  it('every instance has an id, title, author, price, and rating property attached to the instance', () => {
+    expect(book.hasOwnProperty('id')).toBe(true);
+    expect(book.hasOwnProperty('title')).toBe(true);
+    expect(book.hasOwnProperty('author')).toBe(true);
+    expect(book.hasOwnProperty('price')).toBe(true);
+    expect(book.hasOwnProperty('rating')).toBe(true);
   });
 
   it('the `getPrice` method returns the price of the book', () => {
