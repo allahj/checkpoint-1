@@ -44,6 +44,7 @@ describe('soup', () => {
 
     expect(soup('greatjob', 'btergjooziu')).toBe(false);
     expect(soup('javascript', 'jacariptsvvjai')).toBe(true);
+    expect(soup('hello', 'helo')).toBe(false);
   });
 
 });

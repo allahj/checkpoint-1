@@ -1,17 +1,16 @@
 /* eslint-env jasmine */
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-prototype-builtins */
 
 describe('createBook', () => {
-  
   it('`createBook` is a function', () => {
     expect(typeof createBook).toBe('function');
   });
-  
+
   it('`createBook` returns an object (instance) ', () => {
     const book = createBook();
     expect(typeof book).toBe('object');
   });
-  
+
   it('every instance has an id, title, author, price and rating property', () => {
     const book = createBook(1, 'Catch 22', 'Joseph Heller', 19.99);
     expect(book.id).toBe(1);
@@ -20,7 +19,7 @@ describe('createBook', () => {
     expect(book.price).toBe(19.99);
     expect(book.rating).toEqual([]);
   });
-  
+
   it('every instance has an id, title, author, price, and rating property attached to the instance', () => {
     const book = createBook(1, 'Catch 22', 'Joseph Heller', 19.99);
     expect(book.hasOwnProperty('id')).toBe(true);

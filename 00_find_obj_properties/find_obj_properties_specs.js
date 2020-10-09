@@ -1,15 +1,13 @@
 /* eslint-env jasmine */
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-prototype-builtins */
 
 describe('findObjPropsHasOwn', () => {
-
   const rectanglePrototype = {
-    getArea: function() {
+    getArea: function () {
       return this.height * this.width;
-    }
-  }
+    },
+  };
   function rectangle(color, height, width) {
-
     const rectangleInstance = Object.create(rectanglePrototype);
 
     rectangleInstance.color = color;
@@ -50,12 +48,11 @@ describe('findObjPropsHasOwn', () => {
 
 describe('findObjKeys', () => {
   const rectanglePrototype = {
-    getArea: function() {
+    getArea: function () {
       return this.height * this.width;
-    }
-  }
+    },
+  };
   function rectangle(color, height, width) {
-
     const rectangleInstance = Object.create(rectanglePrototype);
 
     rectangleInstance.color = color;
