@@ -55,7 +55,7 @@ The total amount of points for each problem are listed below. Keep in mind, each
 
 ### Submission
 
-When your time limit expires, **commit your changes and push them to your repository on GitHub to be graded in Learndot**.
+When your time limit expires, **commit your changes and push them to your repository on GitHub to be graded by your mentors and instructional team**.
 
 Make sure you press **Done** on the Checkpoint Page to finalize your Checkpoint submission when you are finished!
 
