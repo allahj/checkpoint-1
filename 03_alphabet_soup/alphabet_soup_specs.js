@@ -32,6 +32,7 @@ describe('soup', () => {
 
     expect(soup('cabba', 'bacba')).toBe(true);
     expect(soup('yes', 'yeah')).toBe(false);
+    expect(soup('abbb', 'baaa')).toBe(false);
   });
 
   it('the soup function returns true when there are "extra" characters in the character bank', () => {
