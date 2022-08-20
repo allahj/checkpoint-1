@@ -57,7 +57,7 @@ The total amount of points for each problem are listed below. Keep in mind, each
 
 When your time limit expires, **commit your changes and push them to your repository on GitHub to be graded by your mentors and instructional team**.
 
-Make sure you paste the GitHub URL of your fork into the answer field and press **Submit Quiz** on the Checkpoint Page to finalize your Checkpoint submission when you are finished!
+Make sure you press **Submit Quiz** on the Checkpoint Page to finalize your Checkpoint submission when you are finished!
 
 **Example**
 
